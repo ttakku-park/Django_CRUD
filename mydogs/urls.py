@@ -14,8 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
-    
+    path('owner', include('owner.urls')) #담당하는 앱에 보내주기 include
 ]
